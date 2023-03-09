@@ -1,0 +1,74 @@
+.div-outline {
+  border: 5px, solid, gray;
+  padding: 20px;
+}
+
+.title-text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.not-registered {
+  padding: 10px;
+  font-style: oblique;
+}
+
+.login-header {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.div-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  font-size: 12px;
+  padding: 12px;
+  color: red;
+  display: none;
+}
+
+input:invalid[focused="true"] {
+  border: 1px solid red;
+}
+
+input:invalid[focused="true"] ~ span {
+  display: block;
+}
+
+.nav-spacing {
+  margin: 10px;
+}
+
+.nav-text {
+  color: gray;
+}
+
+.nav-align {
+  display: flex;
+  align-items: baseline;
+}
+
+.checkbox-lg .form-check-input {
+  top: 0.8rem;
+  scale: 1.4;
+  margin-right: 20px;
+}
+
+.checkbox-lg .form-check-label {
+  padding-top: 13px;
+  padding-right: 30px;
+}
+
+.checkbox-xl .form-check-input {
+  top: 1.2rem;
+  scale: 1.7;
+  margin-right: 20px;
+}
+
+.checkbox-xl .form-check-label {
+  padding-top: 19px;
+}
