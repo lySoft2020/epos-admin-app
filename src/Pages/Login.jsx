@@ -44,6 +44,7 @@ export default function Login() {
           toast.error(result.response.data.message);
         } else if (result.username === username) {
           navigate("/customers");
+          window.location.reload();
           //window.location = "/customers";
         }
       } catch (error) {
