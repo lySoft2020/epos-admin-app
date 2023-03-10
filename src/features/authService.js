@@ -8,9 +8,10 @@ export const register = async (userData) => {
   try {
     const response = await axiosBaseUrl.post(API_URL, userData);
 
-    if (response.data) {
-      localStorage.setItem(userKey, JSON.stringify(response.data));
-    }
+    //When they register the account is pending so we don't store to the local storage
+    // if (response.data) {
+    //   localStorage.setItem(userKey, JSON.stringify(response.data));
+    // }
 
     return response.data;
   } catch (error) {

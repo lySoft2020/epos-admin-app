@@ -1,4 +1,4 @@
-import { Button, Form, Container, Card } from "react-bootstrap";
+import { Button, Form, Container, Card, Alert } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -43,7 +43,8 @@ export default function Login() {
         ) {
           toast.error(result.response.data.message);
         } else if (result.username === username) {
-          window.location = "/customers";
+          navigate("/customers");
+          //window.location = "/customers";
         }
       } catch (error) {
         toast.error(error.message);

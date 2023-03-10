@@ -84,11 +84,14 @@ export default function Register() {
       };
       try {
         const user = await authService.register(userData);
-        if (user.response?.status === 409) {
+        if (user.response?.status === 201) {
+          // window.location = "/customers";
+          // we need to send them to the login page because their
+          // account is pending
+          navigate(`/login`);
           // window.location = "/login";
-          toast.error(user.response.data.message);
         } else {
-          window.location = "/customers";
+          toast.error(user.response.data.message);
         }
       } catch (error) {
         toast.error(error.message);

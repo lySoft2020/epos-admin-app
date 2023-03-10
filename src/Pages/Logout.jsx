@@ -1,8 +1,11 @@
 import authService from "../features/authService";
+import { useNavigate } from "react-router-dom";
 
 export default function Logout() {
+  const navigate = useNavigate();
   authService.logout();
-  window.location = "/login";
+  navigate("/login");
+  // window.location = "/login";
 
   return null;
 }
