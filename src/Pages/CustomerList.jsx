@@ -12,6 +12,7 @@ export default function CustomerList() {
   const [customers, setCustomers] = useState([]);
 
   useEffect(() => {
+    console.log("working", "/see");
     getCustomers().then((res) => {
       setCustomers(res);
     });

@@ -14,6 +14,7 @@ import CustomerDetails from "./Pages/CustomerDetails";
 
 function App() {
   const user = authService.getCurrentUser();
+  console.log(user, "/see");
 
   return (
     <>

@@ -88,9 +88,7 @@ export default function Register() {
           // window.location = "/customers";
           // we need to send them to the login page because their
           // account is pending
-          navigate(`/login`);
-          navigate(0);
-          // window.location = "/login";
+          window.location = "/login";
         } else {
           toast.error(user.response.data.message);
         }

@@ -5,6 +5,7 @@ const API_URL = "/api/customers/";
 export const getCustomers = async () => {
   try {
     const customers = await axiosBaseUrl.get(API_URL);
+    console.log(customers, "/see");
     if (customers) {
       return customers.data;
     } else {
